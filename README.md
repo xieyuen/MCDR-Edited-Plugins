@@ -23,7 +23,7 @@
 
 ## [Gamemode](<https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/gamemode>)
 
-**作者**:  [Andy Zhang](<https://github.com/AnzhiZhang>)<br>
+**作者**: [Andy Zhang](<https://github.com/AnzhiZhang>)<br>
 **仓库链接**: [MCDReforgedPlugins/gamemode](<https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/gamemode>)<br>
 **开源协议**: [链接🔗](<https://github.com/AnzhiZhang/MCDReforgedPlugins/blob/master/LICENSE>)
 
@@ -69,7 +69,7 @@ SOFTWARE.
 
 ## [StartStopHelper](<https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/.archived/start_stop_helper_r>)
 
-**作者**: [HIM049](<https://github.com/HIM049/>), [sout_Nantang](<https://github.com/sout233>)<br>
+**作者**: [Andy Zhang](<https://github.com/AnzhiZhang>), [Fallen Breath](<https://github.com/Fallen-Breath>)<br>
 **仓库链接**: [MCDReforgedPlugins/.archived/start_stop_helper_r](<https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/.archived/start_stop_helper_r>)<br>
 **开源协议**: [链接🔗](<https://github.com/AnzhiZhang/MCDReforgedPlugins/blob/master/LICENSE>)
 
