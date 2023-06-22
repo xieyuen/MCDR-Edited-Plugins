@@ -55,7 +55,7 @@ def check_player_num(server: PluginServerInterface):
             if whether_kill_server == True:
                 server.logger.warning("服务器似乎卡死了")
                 server.logger.info("3s后将会杀死服务端")
-                time.sleep(5)
+                time.sleep(3)
                 server.kill()
             
             fake_server(server)
