@@ -28,7 +28,7 @@
 **开源协议**: [链接🔗](<https://github.com/AnzhiZhang/MCDReforgedPlugins/blob/master/LICENSE>)
 
 >License: GNU GPLv3
-内容实在太多，到 [这里](<#license-gnu-gplv3>) 看
+内容实在太多，到 [这里](<#gnu-general-public-license-v30>) 看
 
 
 ## [HibernateR](<https://github.com/HIM049/MCDR_HibernateR>)
@@ -73,11 +73,13 @@ SOFTWARE.
 **开源协议**: [链接🔗](<https://github.com/AnzhiZhang/MCDReforgedPlugins/blob/master/LICENSE>)
 
 >License: GNU GPLv3
-内容实在太多，到 [这里](<#license-gnu-gplv3>) 看
+内容实在太多，到 [这里](<#gnu-general-public-license-v30>) 看
 
 <br><br><br>
 
-### License: GNU GPLv3
+### GNU General Public License v3.0
+
+<details>
 
 ```
                     GNU GENERAL PUBLIC LICENSE
@@ -755,3 +757,5 @@ the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
 ```
+
+</details>
