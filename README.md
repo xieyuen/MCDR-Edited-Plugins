@@ -28,6 +28,7 @@
 **开源协议**: [链接🔗](<https://github.com/AnzhiZhang/MCDReforgedPlugins/blob/master/LICENSE>)
 
 >License: GNU GPLv3
+
 内容实在太多，到 [这里](<#gnu-general-public-license-v30>) 看
 
 
@@ -73,6 +74,7 @@ SOFTWARE.
 **开源协议**: [链接🔗](<https://github.com/AnzhiZhang/MCDReforgedPlugins/blob/master/LICENSE>)
 
 >License: GNU GPLv3
+
 内容实在太多，到 [这里](<#gnu-general-public-license-v30>) 看
 
 <br><br><br>
