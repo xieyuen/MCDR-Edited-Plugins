@@ -11,7 +11,7 @@
     "link": "https://github.com/HIM049/MCDR_HibernateR",
     "dependencies": {
         "online_player_api": "*",
-        "mcdreforged": ">=2.0.0-beta.3"
+        "mcdreforged": ">=2.9.1"
     },
     "resources": [
         "LICENSE"
