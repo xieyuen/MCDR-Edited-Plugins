@@ -8,8 +8,6 @@ import uuid
 import os.path
 import base64
 
-from os import system as cmd 
-
 from mcdreforged.api.all import *
 from .byte_utils import *
 import online_player_api as lib_online_player
