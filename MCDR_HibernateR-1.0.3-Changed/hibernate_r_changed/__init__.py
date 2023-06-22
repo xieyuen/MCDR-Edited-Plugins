@@ -19,7 +19,8 @@ def on_load(server: PluginServerInterface, old_module):
     server.logger.info("插件已加载")
     server.logger.warning("你使用的并非原版！而是 xieyuen 更改版!")
     server.logger.warning("若需要原版，请在下面的网址下载（或者用MPM）")
-    server.logger.warning("https://github.com/HIM049/MCDR_HibernateR")
+    server.logger.warning("https://www.mcdreforged.org/plugins/hibernate_r")
+    server.logger.warning("或者用 MPM")
 
 # 服务器启动事件
 @new_thread
@@ -51,7 +52,14 @@ def check_player_num(server: PluginServerInterface):
             server.logger.info("倒计时结束，关闭服务器")
             server.stop()
             time.sleep(10)
-            # cmd("taskkill /f /im java.exe")
+
+            whether_kill_server = server.is_server_running()
+            if whether_kill_server == True:
+                server.logger.warning("服务器似乎卡死了")
+                server.logger.info("3s后将会杀死服务端")
+                time.sleep(5)
+                server.kill()
+            
             fake_server(server)
         else:
             server.logger.info("服务器内仍有玩家")
