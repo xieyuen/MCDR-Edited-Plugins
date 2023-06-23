@@ -23,6 +23,7 @@ class Config(Serializable):
 
 config: Config
 
+
 def stop_server():
     mcdrserver.stop()
     time.sleep(10)
@@ -39,15 +40,17 @@ def stop_server():
                 mcdrserver.set_exit_after_stop_flag(False)
                 mcdrserver.kill()
     mcdrserver.logger.info("服务端已关闭.")
-    return
+
 
 def stop_exit_server():
     stop_server()
     mcdrserver.exit()
 
+
 def restart_server():
     stop_server()
     mcdrserver.start()
+
 
 def on_load(server: PluginServerInterface, prev_module):
     global config
