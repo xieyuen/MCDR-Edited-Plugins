@@ -17,6 +17,7 @@ class Config(Serializable):
         'stop_exit': 4,
         'restart': 3,
         'exit': 4,
+        'kill': 4,
     }
 
 
