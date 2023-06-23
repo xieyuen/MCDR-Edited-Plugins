@@ -100,7 +100,7 @@ def on_load(server: PluginServerInterface, prev_module):
         ).
             then(
             Literal('kill').
-                requires(lambda src: src.has_permission(permissions['exit'])).
+                requires(lambda src: src.has_permission(permissions['kill'])).
                 runs(lambda src: server.kill())
         )
     )
