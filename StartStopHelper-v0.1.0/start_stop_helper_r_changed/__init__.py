@@ -23,35 +23,6 @@ class Config(Serializable):
 
 config: Config
 
-
-def stop_server():
-    mcdrserver.stop()
-    time.sleep(10)
-    if mcdrserver.is_server_running()==True: 
-        time.sleep(60)
-        if mcdrserver.is_server_running() == True:
-            mcdrserver.logger.warning("服务器似乎并没有关闭...")
-            mcdrserver.logger.info("10s后服务端进程将被杀死.")
-            time.sleep(10)
-            mcdrserver.set_exit_after_stop_flag(False)
-            if mcdrserver.is_server_running() == False: 
-                mcdrserver.logger.info("服务端已关闭")
-            else:
-                mcdrserver.set_exit_after_stop_flag(False)
-                mcdrserver.kill()
-    mcdrserver.logger.info("服务端已关闭.")
-
-
-def stop_exit_server():
-    stop_server()
-    mcdrserver.exit()
-
-
-def restart_server():
-    stop_server()
-    mcdrserver.start()
-
-
 def on_load(server: PluginServerInterface, prev_module):
     global config
     config = server.load_config_simple('config.json', target_class=Config)
@@ -61,6 +32,30 @@ def on_load(server: PluginServerInterface, prev_module):
     mcdrserver.logger.info("若需要原版，请在下面的网址下载（或者用MPM）")
     mcdrserver.logger.info("https://www.mcdreforged.org/plugins/start_stop_helper_r")
     mcdrserver.logger.info("或者用 MPM")
+    
+    def stop_server():
+        mcdrserver.stop()
+        time.sleep(10)
+        if mcdrserver.is_server_running()==True: 
+            time.sleep(60)
+            if mcdrserver.is_server_running() == True:
+                mcdrserver.logger.warning("服务器似乎并没有关闭...")
+                mcdrserver.logger.info("10s后服务端进程将被杀死.")
+                time.sleep(10)
+                mcdrserver.set_exit_after_stop_flag(False)
+                if mcdrserver.is_server_running() == False: 
+                    mcdrserver.logger.info("服务端已关闭")
+                else:
+                    mcdrserver.set_exit_after_stop_flag(False)
+                    mcdrserver.kill()
+        mcdrserver.logger.info("服务端已关闭.")
+    def stop_exit_server():
+        stop_server()
+        mcdrserver.exit()
+    def restart_server():
+        stop_server()
+        mcdrserver.start()
+
     server.register_help_message(
         '!!server',
         {
