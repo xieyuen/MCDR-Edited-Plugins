@@ -15,7 +15,7 @@ import online_player_api as lib_online_player
 
 def on_load(server: PluginServerInterface, old_module):
     server.logger.info("插件已加载")
-    server.logger.warning("你使用的并非原版！而是 xieyuen 更改版!")
+    server.logger.warning("你使用的并非原版！而是 xieyuen 修改版!")
     server.logger.warning("若需要原版，请在下面的网址下载（或者用MPM）")
     server.logger.warning("https://www.mcdreforged.org/plugins/hibernate_r")
     server.logger.warning("或者用 MPM")
