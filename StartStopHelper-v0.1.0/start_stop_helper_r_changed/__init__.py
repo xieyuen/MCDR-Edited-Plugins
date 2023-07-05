@@ -28,7 +28,7 @@ def on_load(server: mcdrserver, prev_module):
     config = server.load_config_simple('config.json', target_class=Config)
     permissions = config.permissions
     mcdrserver.logger.info("插件已加载")
-    mcdrserver.logger.warning("你使用的并非原版！而是 xieyuen 更改版!")
+    mcdrserver.logger.warning("你使用的并非原版！而是 xieyuen 修改版!")
     mcdrserver.logger.info("若需要原版，请在下面的网址下载（或者用MPM）")
     mcdrserver.logger.info("https://www.mcdreforged.org/plugins/start_stop_helper_r")
     mcdrserver.logger.info("或者用 MPM")
