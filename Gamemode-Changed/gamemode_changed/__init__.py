@@ -10,7 +10,7 @@ from mcdreforged.api.utils import Serializable
 
 def on_load(server: PluginServerInterface, old_module):
     server.logger.info("插件已加载")
-    server.logger.warning("你使用的并非原版！而是 xieyuen 更改版!")
+    server.logger.warning("你使用的并非原版！而是 xieyuen 修改版!")
     server.logger.warning("若需要原版，请在下面的网址下载")
     server.logger.warning("https://www.mcdreforged.org/plugins/gamemode")
     server.logger.warning("或者用 MPM")
