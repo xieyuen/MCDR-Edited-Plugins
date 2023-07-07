@@ -283,7 +283,7 @@ def on_load(server: PluginServerInterface, old):
         )
     )
     server.register_command(
-        Literal('!!tp')
+        Literal('!!ctp')
         .requires(lambda src: src.has_permission(permissions.tp))
         .then(
             Text('param1')
