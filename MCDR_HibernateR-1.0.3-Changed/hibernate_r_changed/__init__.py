@@ -38,7 +38,7 @@ def on_player_left(server: PluginServerInterface, player):
 @spam_proof
 def check_player_num(server: PluginServerInterface):
     if len(lib_online_player.get_player_list()) == 0:
-        
+
         check_config_fire(server)
         time.sleep(2)
         with open("config/HibernateR.json", "r") as file:
@@ -57,7 +57,7 @@ def check_player_num(server: PluginServerInterface):
                 server.logger.info("3s后将会杀死服务端")
                 time.sleep(3)
                 server.kill()
-            
+
             fake_server(server)
         else:
             server.logger.info("服务器内仍有玩家")
@@ -77,7 +77,7 @@ def fake_server(server: PluginServerInterface):
     fs_motd = config["motd"]["1"] + "\n" + config["motd"]["2"]
     fs_icon = None
     fs_kick_message = ""
-    
+
     for message in config["kick_message"]:
             fs_kick_message += message + "\n"
 
@@ -184,10 +184,10 @@ def check_config_fire(server: PluginServerInterface):
     else:
         server.logger.warning("未找到配置文件！正在以默认值创建")
         server.logger.info("配置文件已被 xieyuen 改过了！无需再次改动")
-        crative_config_fire()
+        creative_config_fire()
         return
 
-def crative_config_fire():
+def creative_config_fire():
     config = {}
     config["wait_min"] = 10
     config["ip"] = "0.0.0.0"
